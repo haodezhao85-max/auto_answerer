@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>demo quiz</title>
+<style>
+.question { border: 1px solid #ccc; margin: 12px; padding: 10px; }
+.qtext { font-weight: bold; margin-bottom: 6px; }
+textarea { width: 90%; }
+</style>
+</head>
+<body>
+<h2>演示测验（程序自测用）</h2>
+
+<div class="question">
+  <div class="qtext">1. What is 2 + 2? (单选)</div>
+  <label><input type="radio" name="q1" value="a"> A. 3</label>
+  <label><input type="radio" name="q1" value="b"> B. 4</label>
+  <label><input type="radio" name="q1" value="c"> C. 5</label>
+  <label><input type="radio" name="q1" value="d"> D. 22</label>
+</div>
+
+<div class="question">
+  <div class="qtext">2. Which of the following are fruits? (多选)</div>
+  <label><input type="checkbox" name="q2" value="a"> Apple</label>
+  <label><input type="checkbox" name="q2" value="b"> Carrot</label>
+  <label><input type="checkbox" name="q2" value="c"> Banana</label>
+  <label><input type="checkbox" name="q2" value="d"> Grape</label>
+</div>
+
+<div class="question">
+  <div class="qtext">3. 填空题：The capital of China is <input type="text" name="q3" size="10">.</div>
+</div>
+
+<div class="question">
+  <div class="qtext">4. 下拉题：请选择你的英语水平</div>
+  <select name="q4">
+    <option value="">--请选择--</option>
+    <option>基础A1</option>
+    <option>入门A2</option>
+    <option>中级B1</option>
+  </select>
+</div>
+
+<div class="question">
+  <div class="qtext">5. 作文题：请以 The Beauty of Kindness 为题写一篇英语作文，120-220 词。</div>
+  <textarea name="q5" rows="10"></textarea>
+</div>
+
+<div class="question">
+  <div class="qtext">6. 判断题：地球是圆的。</div>
+  <label><input type="radio" name="q6" value="t"> 正确</label>
+  <label><input type="radio" name="q6" value="f"> 错误</label>
+</div>
+
+</body>
+</html>

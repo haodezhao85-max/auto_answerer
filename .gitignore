@@ -1,0 +1,15 @@
+.venv/
+.browsers/
+.tmp/
+out/
+profiles/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite
+*.db
+*.jsonl
+自动答题助手.lnk

@@ -1,0 +1,51 @@
+{
+  "target_url": "https://example.com",
+  "mode": "attach",
+  "cdp_url": "http://127.0.0.1:9222",
+  "browser_channel": "msedge",
+  "browser_user_data_dir": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data",
+  "headless": false,
+  "login_pause": true,
+  "auto_submit": false,
+  "confirm_submit": true,
+  "skip_unknown_stem": true,
+  "bank_letter_mode": true,
+  "answer_mode": "normal",
+  "rewind_steps": 6,
+  "max_pages": 100,
+  "page_settle_ms": 1500,
+  "next_keywords": [
+    "下一题",
+    "下一页",
+    "下一頁",
+    "下一步",
+    "下一节",
+    "下一条",
+    "Next",
+    "继续"
+  ],
+  "submit_keywords": [
+    "提交",
+    "交卷",
+    "Submit",
+    "完成并提交"
+  ],
+  "llm": {
+    "provider": "DeepSeek",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-chat",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "timeout": 120,
+    "max_retries": 2,
+    "temperature": 0.2,
+    "chunk_size": 25
+  },
+  "vision": {
+    "enabled": false,
+    "provider": "智谱GLM",
+    "base_url": "https://open.bigmodel.cn/api/paas/v4",
+    "model": "glm-4v-flash",
+    "api_key_env": "ZHIPU_API_KEY",
+    "timeout": 90
+  }
+}

@@ -62,7 +62,7 @@ python main.py
 常用参数：
 ```bat
 python main.py --no-pause          :: 已登录且已在任务页，跳过回车等待
-python main.py --url https://...   :: 指定起始页面地址
+python main.py --url https://...   :: 指定任务地址
 python main.py --auto-submit       :: 答完自动点提交（慎用，默认关闭）
 python main.py --max-pages 20      :: 限制翻页数
 ```

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>学习通样式 · 模拟测验</title>
+<style>
+body { font-family: "Microsoft YaHei", sans-serif; background:#f0f2f5; margin:0; color:#333; }
+.top { background:#fff; padding:10px 20px; border-bottom:1px solid #ddd; }
+.top b { font-size:16px; }
+.q { background:#fff; margin:12px auto; padding:16px 20px; max-width:900px; border-radius:6px; }
+.qtitle { font-weight:bold; margin-bottom:10px; }
+.opts div { padding:6px 10px; margin:4px 0; border:1px solid #ddd; border-radius:4px; cursor:pointer; }
+.opts input { display:none; }
+input[type=text] { border:1px solid #aaa; padding:4px 6px; }
+textarea { width:90%; height:80px; border:1px solid #aaa; }
+</style>
+</head>
+<body>
+<div class="top"><b>数学 · 单元练习（演示）</b>　匿名演示数据　<span style="color:red">剩余 45:00</span></div>
+
+<div class="q">
+  <div class="qtitle">1.（单选 2分）下列哪个是随机变量的数学期望的线性性质？</div>
+  <div class="opts" name="q1">
+    <div><input type="radio" name="q1" value="A"><span>A. E(aX+bY)=aE(X)+bE(Y)</span></div>
+    <div><input type="radio" name="q1" value="B"><span>B. E(XY)=E(X)E(Y)</span></div>
+    <div><input type="radio" name="q1" value="C"><span>C. E(X²)=[E(X)]²</span></div>
+    <div><input type="radio" name="q1" value="D"><span>D. 以上都不对</span></div>
+  </div>
+</div>
+
+<div class="q">
+  <div class="qtitle">2.（多选 3分）下列哪些是离散型随机变量的分布律应满足的条件？</div>
+  <div class="opts">
+    <div><label><input type="checkbox" name="q2" value="A">A. p_k ≥ 0</label></div>
+    <div><label><input type="checkbox" name="q2" value="B">B. Σp_k = 1</label></div>
+    <div><label><input type="checkbox" name="q2" value="C">C. p_k ≤ 0.5</label></div>
+    <div><label><input type="checkbox" name="q2" value="D">D. 每个 p_k 必须互不相等</label></div>
+  </div>
+</div>
+
+<div class="q">
+  <div class="qtitle">3.（判断 2分）若 X、Y 相互独立，则 D(X+Y)=D(X)+D(Y)。</div>
+  <div class="opts">
+    <div><input type="radio" name="q3" value="T"><span>正确</span></div>
+    <div><input type="radio" name="q3" value="F"><span>错误</span></div>
+  </div>
+</div>
+
+<div class="q">
+  <div class="qtitle">4.（填空 2分）标准正态分布的均值为 __，方差为 __。</div>
+  <p>均值 <input type="text" name="q4a" style="width:70px">　　方差 <input type="text" name="q4b" style="width:70px"></p>
+</div>
+
+<div class="q">
+  <div class="qtitle">5.（简答 6分）请简要说明大数定律的直观含义。</div>
+  <textarea name="q5"></textarea>
+</div>
+</body>
+</html>
